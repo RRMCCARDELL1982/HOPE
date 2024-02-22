@@ -1,0 +1,69 @@
+cyVendingMachine = new CYVendingMachine(coinReturn, lineNumNow, new CYVendingMachine.ShipmentBalanceListener() {
+    @Override
+    public void ShipmentBalance(int i, double v) {
+        XLog.i(TAG, "CYVendingMachine status:" + i);
+                switch (i) {
+
+                    case 0:
+                        //serial port no singal
+                        break;
+                    case 1:
+                        //shipment send
+                        break;
+                    case 2:
+                        //query start
+                        break;
+                    case 3:
+                        //shipment success
+             
+                        break;
+                    case 4:
+                        //motor fault
+                 
+                        break;
+                    case 5:
+                        //Light eyes fault
+                     
+                        break;
+                    case 6:
+                        //set balance
+                   
+                        break;
+
+                    case 7:
+                        //coin return is working
+                      
+                        break;
+
+                    case 8:
+                        //coin return is not working
+
+
+                        break;
+
+                    case 9:
+   
+                        //coin return is success
+                        
+                        break;
+
+                    case 10:
+                        //coin return failed
+                        break;
+
+
+                    default:
+
+                        break;
+                }
+            }
+  
+
+    }
+});
+
+
+
+
+cyVendingMachine.CoinReturn();
+cyVendingMachine.DestoryCYVendingMachine();
