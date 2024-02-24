@@ -105,7 +105,7 @@ document.getElementById("vendButton").addEventListener("click", function() {
 function redirectToNextPageAfterDelay() {
     // Set a timeout to redirect after 30 seconds (30000 milliseconds)
     setTimeout(function() {
-        window.location.href = "SAMPLE_UX.html"; // Change "NEXT_PAGE.html" to the URL of the next page
+        window.location.href = "index.html"; // Change "NEXT_PAGE.html" to the URL of the next page
     }, 30000); // Adjust the delay time as needed
 }
 
