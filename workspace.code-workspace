@@ -1,0 +1,23 @@
+{
+	"folders": [],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Program",
+				"program": "${workspaceFolder}/app.js",
+				"request": "launch",
+				"skipFiles": [
+					"<node_internals>/**"
+				],
+				"type": "node"
+			},
+			{
+				"type": "chrome",
+				"name": "http://./gradlew assembleDebug",
+				"request": "launch",
+				"url": "http://./gradlew assembleDebug"
+			}
+		]
+	}
+}
