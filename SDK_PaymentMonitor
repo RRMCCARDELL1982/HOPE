@@ -1,0 +1,48 @@
+private CYVendingMachine cyVendingMachine;
+
+
+
+
+cyVendingMachine = new CYVendingMachine(1, dprice, mode, new CYVendingMachine.PaymentListener() {
+    @Override
+    public void PaymentResult(int i, double v) {
+        isSerialPortData = i;
+        switch (i) {
+            case 0:
+                //serial port no singal
+                break;
+            case 1:
+                //payment send
+                
+                break;
+            case 2:
+                //Payment confirm query start
+               
+                break;
+            case 3:
+
+                // take balance     need make a method to upadate UI
+
+                XLog.i(TAG, "Query success!");
+                break;
+            case 4:
+                //accept payment command
+                //begin to shipment
+                //v is machine price,do not take this now
+                break;
+            case 5:
+                //cancle payment  success
+                //go back
+                XLog.i(TAG, "Cancle payment succsess!");
+                goBack();
+                break;
+        }
+    }
+});
+
+
+
+
+
+
+cyVendingMachine.setCanclePaymentQuery();
