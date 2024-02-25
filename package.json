@@ -8,6 +8,9 @@
     "build": "cp -r src/* dist/",
     "build:azure": "cp -r src/* dist/"
   },
+  "engines": {
+    "node": "16.20.2"
+  }
   "keywords": [],
   "author": "Ricky McCardell",
   "license": "ISC"
