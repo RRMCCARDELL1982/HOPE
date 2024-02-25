@@ -9,6 +9,6 @@
     "build:azure": "cp -r src/* dist/"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ricky McCardell",
   "license": "ISC"
 }
