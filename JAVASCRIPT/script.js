@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = "VEND_WAIT_PAGE.html"; // Change "VEND_WAIT_PAGE.html" to the URL of the new page
 
             // Make an HTTP request to your Azure Function when the button is clicked
-            fetch('https://vendtest1.azurewebsites.net', {
+            fetch('https://groundzeromv.azurewebsites.net', {
                 method: 'POST',
                 body: JSON.stringify({ /* Add any data you want to send to the function */ }),
                 headers: {
