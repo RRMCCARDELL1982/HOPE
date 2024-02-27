@@ -7,6 +7,27 @@ document.addEventListener("DOMContentLoaded", function() {
         vendButton.addEventListener("click", function() {
             // Navigate to a new page
             window.location.href = "VEND_WAIT_PAGE.html"; // Change "VEND_WAIT_PAGE.html" to the URL of the new page
+
+            // Make an HTTP request to your Azure Function when the button clicked
+            fetch('https://groundzeromv.azurewebsites.net', {
+                method: 'POST',
+                body: JSON.stringify({ /* Add any data you want to send to the function */ }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Display success message to the user
+                    console.log('Vending machine action triggered successfully!');
+                } else {
+                    // Display error message to the user
+                    console.error('Error triggering vending machine action:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error triggering vending machine action:', error);
+            });
         });
     } else {
         console.error("vendButton element not found");
@@ -21,7 +42,6 @@ const CMD_START_VEND = 0x41; // Command to start vending
 const DATA_LENGTH = 0x02; // Data length for the start vending command
 const COIN_LANE = 0x01; // Example coin lane
 const DELIVERY_QUANTITY = 0x01; // Example delivery quantity
-
 
 // Function to send the vending command
 function startVending() {
@@ -111,3 +131,4 @@ function redirectToNextPageAfterDelay() {
 
 // Call the function to initiate the redirection
 redirectToNextPageAfterDelay();
+
