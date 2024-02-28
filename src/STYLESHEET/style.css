@@ -16,6 +16,9 @@ body, html {
     height: 100%;
     top: 0;
     left: 0;
+    .container::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 #vendButton {
