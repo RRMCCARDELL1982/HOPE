@@ -22,11 +22,6 @@ body, html {
     display: none;
 }
 
-/* Hide system-level UI elements */
-body, button, input {
-    display: none;
-}
-
 #vendButton {
     position: absolute;
     top: 50%;
