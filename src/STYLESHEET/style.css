@@ -7,6 +7,9 @@ body, html {
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    body, button, input {
+    display: none;
+}
 }
 
 .container {
@@ -19,9 +22,6 @@ body, html {
     .container::-webkit-scrollbar {
         display: none;
     }
-}
-body, button, input {
-    display: none;
 }
 
 #vendButton {
