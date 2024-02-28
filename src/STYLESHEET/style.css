@@ -7,9 +7,6 @@ body, html {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    body, button, input {
-    display: none;
-}
 }
 
 .container {
