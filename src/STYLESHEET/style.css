@@ -19,6 +19,9 @@ body, html {
     .container::-webkit-scrollbar {
         display: none;
     }
+    body, button, input {
+    display: none;
+    }
 }
 
 #vendButton {
