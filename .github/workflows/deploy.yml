@@ -9,12 +9,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Azure Login
+      - name: Login to Azure
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-          tenant-id: 34916e8d-6ece-4734-b11a-a636d7d30ba3
-          client-id: 55795fe6-ab23-401a-8e68-9e239c5ecc9a
+          enable-AzPSSession: false
+          environment: azurecloud
+          allow-no-subscriptions: false
+          audience: api://AzureADTokenExchange
+          auth-type: AZ
+
 
       - name: Checkout repository
         uses: actions/checkout@v2
