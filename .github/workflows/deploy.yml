@@ -9,6 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -16,6 +21,8 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ secrets.GroundZeroMV }}
+          slot-name: production
           publish-profile: ${{ secrets.AZURE_FUNCTION_APP_PUBLISH_PROFILE }}
           package: ./functions.zip
+
 
