@@ -7,12 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js"
   },
-
   "engines": {
     "node": "16.20.2"
   },
   "keywords": [],
   "author": "Ricky McCardell",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RRMCCARDELL1982/HOPE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RRMCCARDELL1982/HOPE/issues"
+  },
+  "homepage": "https://github.com/RRMCCARDELL1982/HOPE#readme"
 }
-
