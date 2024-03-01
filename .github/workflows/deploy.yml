@@ -20,7 +20,7 @@ jobs:
           enable-AzPSSession: false
           allow-no-subscriptions: false
           audience: api://AzureADTokenExchange
-          auth-type: SERVICE_PRINCIPAL
+          auth-type: CLI
 
       - name: Checkout repository
         uses: actions/checkout@v2
