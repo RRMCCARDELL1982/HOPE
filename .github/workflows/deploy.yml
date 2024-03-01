@@ -13,8 +13,8 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: 34916e8d-6ece-4734-b11a-a636d7d30ba3
+          client-id: 55795fe6-ab23-401a-8e68-9e239c5ecc9a
 
       - name: Checkout repository
         uses: actions/checkout@v2
