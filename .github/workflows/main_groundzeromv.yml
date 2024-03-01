@@ -26,15 +26,7 @@ jobs:
         with:
           java-version: ${{ env.JAVA_VERSION }}
 
-      - name: 'Resolve Project Dependencies Using Npm'
-        shell: bash
-        run: |
-          pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
-          npm install
-          npm run build --if-present
-          npm run test --if-present
-          popd
-          
+        
       - name: 'Run Azure Functions Action'
         uses: Azure/functions-action@v1
         id: fa
