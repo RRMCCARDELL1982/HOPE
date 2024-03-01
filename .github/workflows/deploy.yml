@@ -16,6 +16,7 @@ jobs:
           tenant-id: 34916e8d-6ece-4734-b11a-a636d7d30ba3
           client-id: 77674868-ac6e-487c-976b-8bf6782613bf
           client-secret: 55795fe6-ab23-401a-8e68-9e239c5ecc9a
+          subscription-id: 8e727073-5eed-4946-89c5-25a5a681913a
 
       - name: Azure CLI script
         uses: azure/CLI@v1
