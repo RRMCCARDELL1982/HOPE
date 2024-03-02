@@ -18,8 +18,8 @@ jobs:
         with:
           environment: azurecloud
           tenant-id: "34916e8d-6ece-4734-b11a-a636d7d30ba3"
-          client-id: "77674868-ac6e-487c-976b-8bf6782613bf"
-          subscription-id: "8e727073-5eed-4946-89c5-25a5a681913a"
+          client-id: "0087c21e-4621-4072-a7d9-77aac642d8bf"
+          principal-id: "ec6dc8ca-d5ff-403a-907a-1f2d23bdd6e0"
           enable-AzPSSession: false
           allow-no-subscriptions: false
           audience: api://AzureADTokenExchange
