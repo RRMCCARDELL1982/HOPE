@@ -20,7 +20,7 @@ jobs:
           enable-AzPSSession: false
           allow-no-subscriptions: false
           audience: api://AzureADTokenExchange
-          auth-type: IDENTITY
+          auth-type: SERVICE_PLAN
 
       - name: Checkout repository
         uses: actions/checkout@v2
